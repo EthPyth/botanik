@@ -43,7 +43,7 @@ class Politesse:
                     self.bot.call_with_human_delay(
                             self.bot.privmsg,
                             channel,
-                            "%s, %s" % (mask.nick, reply[random.randint(0, len(reply)-1)]))
+                            "%s, %s" % (mask.nick, self.reply[random.randint(0, len(reply)-1)]))
             elif mask.nick.lower() == self.bot.nick.lower():
                 self.usersreplied = [nick.lower() for nick in self.bot.nicks]
     
